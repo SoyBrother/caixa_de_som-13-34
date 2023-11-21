@@ -19,6 +19,11 @@ for(let contador = 0;contador < listaDeTeclas.lenght;contador = contador++){
         tocaSom(idAudio);
     }
     tecla.onkeydown = function(){
+        if(EventCounts.code != 'Tab'){
         tecla.classList.add('ativa');
+        }
+    }
+    tecla.onkeyup = function(){
+        tecla.classList.remove('ativa');
     }
 }
