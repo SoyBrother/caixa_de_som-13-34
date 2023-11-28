@@ -3,10 +3,8 @@ function tocaSom(idElementoAudio){
     document.querySelector(idElementoAudio).play();
 }
 
-
 //referência constante listaDeTeclas, buscando todos os botões
 const listaDeTeclas = document.querySelectorAll('.tecla');
-
 
 for(let contador = 0;contador < listaDeTeclas.lenght;contador++){
     const tecla = listaDeTeclas[contador];
